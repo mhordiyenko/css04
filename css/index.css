@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+:root {
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+
+header nav {
+    display: flex;
+    margin: 0 10px;
+}
+
+header nav p {
+    margin-right: 10px;
+}
+
+header nav ul {
+    display: flex;
+    flex: 1;
+    padding: 0;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin-right: 1%;
+}
+
+header nav ul li:last-child {
+    margin-left: auto;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+div.banner {
+    background-image: url(../img/tesla.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.banner div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+}
+
+div.banner div h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+div.banner div button {
+    margin: auto;
+}
+
+.product-card {
+    border: 1px solid blue;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card .buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-card .buttons a {
+    margin: 5px;
+    width: 40%;
+}
+
+.product-list {
+    margin: 0 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}
